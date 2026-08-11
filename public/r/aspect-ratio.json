@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "aspect-ratio",
+  "title": "Aspect Ratio",
+  "description": "HAACcn Aspect Ratio built on Base UI and the design.md semantic system.",
+  "dependencies": [],
+  "registryDependencies": [
+    "MotlaqM/HAACcn/haac-theme",
+    "MotlaqM/HAACcn/inter",
+    "MotlaqM/HAACcn/utils"
+  ],
+  "files": [
+    {
+      "path": "components/ui/aspect-ratio.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\n\nfunction AspectRatio({\n  ratio,\n  className,\n  ...props\n}: React.ComponentProps<\"div\"> & { ratio: number }) {\n  return (\n    <div\n      data-slot=\"aspect-ratio\"\n      style={\n        {\n          \"--ratio\": ratio,\n        } as React.CSSProperties\n      }\n      className={cn(\"relative aspect-(--ratio)\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { AspectRatio }\n",
+      "type": "registry:ui",
+      "target": "@ui/aspect-ratio.tsx"
+    }
+  ],
+  "categories": [
+    "layout and feedback"
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "skeleton",
+  "title": "Skeleton",
+  "description": "HAACcn Skeleton built on Base UI and the design.md semantic system.",
+  "dependencies": [],
+  "registryDependencies": [
+    "MotlaqM/HAACcn/haac-theme",
+    "MotlaqM/HAACcn/inter",
+    "MotlaqM/HAACcn/utils"
+  ],
+  "files": [
+    {
+      "path": "components/ui/skeleton.tsx",
+      "content": "import { cn } from \"@/lib/utils\"\n\nfunction Skeleton({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"skeleton\"\n      className={cn(\"animate-pulse rounded-md bg-muted\", className)}\n      {...props}\n    />\n  )\n}\n\nexport { Skeleton }\n",
+      "type": "registry:ui",
+      "target": "@ui/skeleton.tsx"
+    }
+  ],
+  "categories": [
+    "layout and feedback"
+  ],
+  "type": "registry:ui"
+}
