@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "use-mobile",
+  "title": "Use mobile",
+  "files": [
+    {
+      "path": "hooks/use-mobile.ts",
+      "content": "import * as React from \"react\"\n\nconst MOBILE_BREAKPOINT = 768\n\nfunction subscribe(onStoreChange: () => void) {\n  const mediaQuery = window.matchMedia(\n    `(max-width: ${MOBILE_BREAKPOINT - 1}px)`\n  )\n  mediaQuery.addEventListener(\"change\", onStoreChange)\n  return () => mediaQuery.removeEventListener(\"change\", onStoreChange)\n}\n\nfunction getSnapshot() {\n  return window.innerWidth < MOBILE_BREAKPOINT\n}\n\nfunction getServerSnapshot() {\n  return false\n}\n\nexport function useIsMobile() {\n  return React.useSyncExternalStore(subscribe, getSnapshot, getServerSnapshot)\n}\n",
+      "type": "registry:hook",
+      "target": "@hooks/use-mobile.ts"
+    }
+  ],
+  "type": "registry:hook"
+}

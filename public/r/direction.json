@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "direction",
+  "title": "Direction",
+  "description": "HAACcn Direction built on Base UI and the design.md semantic system.",
+  "dependencies": [
+    "@base-ui/react@^1.7.0"
+  ],
+  "registryDependencies": [
+    "MotlaqM/HAACcn/haac-theme",
+    "MotlaqM/HAACcn/inter"
+  ],
+  "files": [
+    {
+      "path": "components/ui/direction.tsx",
+      "content": "\"use client\"\n\nexport {\n  DirectionProvider,\n  useDirection,\n} from \"@base-ui/react/direction-provider\"\n",
+      "type": "registry:ui",
+      "target": "@ui/direction.tsx"
+    }
+  ],
+  "categories": [
+    "layout and feedback"
+  ],
+  "type": "registry:ui"
+}

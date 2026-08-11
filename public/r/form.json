@@ -1,0 +1,16 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "form",
+  "title": "Form",
+  "description": "Compatibility entry for shadcn's metadata-only form item. Installs HAACcn Field primitives for accessible form composition.",
+  "registryDependencies": [
+    "MotlaqM/HAACcn/haac-theme",
+    "MotlaqM/HAACcn/inter",
+    "MotlaqM/HAACcn/field"
+  ],
+  "docs": "The current official shadcn form entry contains no files. HAACcn preserves that inventory contract and routes consumers to Field instead of recreating the deprecated wrapper API.",
+  "categories": [
+    "forms"
+  ],
+  "type": "registry:ui"
+}

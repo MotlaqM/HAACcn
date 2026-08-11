@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "inter",
+  "title": "Inter",
+  "description": "HAACcn's product typeface, installed through next/font.",
+  "type": "registry:font",
+  "font": {
+    "family": "Inter",
+    "provider": "google",
+    "import": "Inter",
+    "variable": "--font-inter",
+    "weight": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "subsets": [
+      "latin"
+    ]
+  }
+}

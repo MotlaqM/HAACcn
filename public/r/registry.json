@@ -1,0 +1,1706 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "haaccn",
+  "homepage": "https://github.com/MotlaqM/HAACcn",
+  "items": [
+    {
+      "name": "inter",
+      "type": "registry:font",
+      "title": "Inter",
+      "description": "HAACcn's product typeface, installed through next/font.",
+      "font": {
+        "family": "Inter",
+        "provider": "google",
+        "import": "Inter",
+        "variable": "--font-inter",
+        "weight": [
+          "400",
+          "500",
+          "600",
+          "700"
+        ],
+        "subsets": [
+          "latin"
+        ]
+      }
+    },
+    {
+      "name": "haac-theme",
+      "type": "registry:theme",
+      "title": "HAACcn Theme",
+      "description": "Semantic light and dark color roles, compact radii, and restrained elevation from design.md.",
+      "cssVars": {
+        "theme": {
+          "font-sans": "var(--font-inter)",
+          "color-brand": "var(--brand)",
+          "color-important": "var(--important)",
+          "color-success": "var(--success)",
+          "color-warning": "var(--warning)",
+          "color-highlight": "var(--highlight)",
+          "radius-sm": "4px",
+          "radius-md": "6px",
+          "radius-lg": "var(--radius)",
+          "radius-xl": "10px"
+        },
+        "light": {
+          "background": "#f5f5f5",
+          "foreground": "#171717",
+          "card": "#ffffff",
+          "card-foreground": "#171717",
+          "popover": "#ffffff",
+          "popover-foreground": "#171717",
+          "primary": "#262626",
+          "primary-foreground": "#ffffff",
+          "secondary": "#f0f0f0",
+          "secondary-foreground": "#262626",
+          "muted": "#f0f0f0",
+          "muted-foreground": "#737373",
+          "accent": "#f5f5f5",
+          "accent-foreground": "#262626",
+          "destructive": "#dc2626",
+          "border": "#e5e5e5",
+          "input": "#d4d4d4",
+          "ring": "#3b82f6",
+          "brand": "#ff591e",
+          "brand-secondary": "#fb432c",
+          "important": "#2563eb",
+          "success": "#16a34a",
+          "warning": "#d97706",
+          "highlight": "#fff2ed",
+          "chart-1": "#ff591e",
+          "chart-2": "#2563eb",
+          "chart-3": "#16a34a",
+          "chart-4": "#d97706",
+          "chart-5": "#737373",
+          "radius": "8px",
+          "duration-default": "100ms",
+          "duration-overlay": "200ms",
+          "button-shadow": "0 1px 2px rgb(0 0 0 / 0.08), inset 0 1px 0 rgb(255 255 255 / 0.35)",
+          "popover-shadow": "0 12px 32px rgb(0 0 0 / 0.14)",
+          "sidebar": "#fcfcfc",
+          "sidebar-foreground": "#171717",
+          "sidebar-primary": "#262626",
+          "sidebar-primary-foreground": "#ffffff",
+          "sidebar-accent": "#f0f0f0",
+          "sidebar-accent-foreground": "#262626",
+          "sidebar-border": "#e5e5e5",
+          "sidebar-ring": "#3b82f6"
+        },
+        "dark": {
+          "background": "#0d0d0d",
+          "foreground": "#f5f5f5",
+          "card": "#171717",
+          "card-foreground": "#f5f5f5",
+          "popover": "#1e1e1e",
+          "popover-foreground": "#f5f5f5",
+          "primary": "#f5f5f5",
+          "primary-foreground": "#171717",
+          "secondary": "#262626",
+          "secondary-foreground": "#f5f5f5",
+          "muted": "#262626",
+          "muted-foreground": "#a3a3a3",
+          "accent": "#313131",
+          "accent-foreground": "#f5f5f5",
+          "destructive": "#ef4444",
+          "border": "#313131",
+          "input": "#404040",
+          "ring": "#3b82f6",
+          "brand": "#ff591e",
+          "brand-secondary": "#fb432c",
+          "important": "#3b82f6",
+          "success": "#22c55e",
+          "warning": "#f59e0b",
+          "highlight": "#321b14",
+          "chart-1": "#ff591e",
+          "chart-2": "#3b82f6",
+          "chart-3": "#22c55e",
+          "chart-4": "#f59e0b",
+          "chart-5": "#a3a3a3",
+          "sidebar": "#171717",
+          "sidebar-foreground": "#f5f5f5",
+          "sidebar-primary": "#f5f5f5",
+          "sidebar-primary-foreground": "#171717",
+          "sidebar-accent": "#262626",
+          "sidebar-accent-foreground": "#f5f5f5",
+          "sidebar-border": "#313131",
+          "sidebar-ring": "#3b82f6"
+        }
+      }
+    },
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "Utilities",
+      "dependencies": [
+        "clsx@^2.1.1",
+        "tailwind-merge@^3.6.0"
+      ],
+      "files": [
+        {
+          "path": "lib/utils.ts",
+          "type": "registry:lib",
+          "target": "@lib/utils.ts"
+        }
+      ]
+    },
+    {
+      "name": "use-mobile",
+      "type": "registry:hook",
+      "title": "Use mobile",
+      "files": [
+        {
+          "path": "hooks/use-mobile.ts",
+          "type": "registry:hook",
+          "target": "@hooks/use-mobile.ts"
+        }
+      ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:ui",
+      "title": "Accordion",
+      "description": "HAACcn Accordion built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/accordion.tsx",
+          "type": "registry:ui",
+          "target": "@ui/accordion.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "alert",
+      "type": "registry:ui",
+      "title": "Alert",
+      "description": "HAACcn Alert built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/alert.tsx",
+          "type": "registry:ui",
+          "target": "@ui/alert.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "alert-dialog",
+      "type": "registry:ui",
+      "title": "Alert Dialog",
+      "description": "HAACcn Alert Dialog built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/alert-dialog.tsx",
+          "type": "registry:ui",
+          "target": "@ui/alert-dialog.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "aspect-ratio",
+      "type": "registry:ui",
+      "title": "Aspect Ratio",
+      "description": "HAACcn Aspect Ratio built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/aspect-ratio.tsx",
+          "type": "registry:ui",
+          "target": "@ui/aspect-ratio.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "attachment",
+      "type": "registry:ui",
+      "title": "Attachment",
+      "description": "HAACcn Attachment built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/attachment.tsx",
+          "type": "registry:ui",
+          "target": "@ui/attachment.tsx"
+        }
+      ],
+      "categories": [
+        "communication"
+      ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:ui",
+      "title": "Avatar",
+      "description": "HAACcn Avatar built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/avatar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/avatar.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "badge",
+      "type": "registry:ui",
+      "title": "Badge",
+      "description": "HAACcn Badge built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/badge.tsx",
+          "type": "registry:ui",
+          "target": "@ui/badge.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "breadcrumb",
+      "type": "registry:ui",
+      "title": "Breadcrumb",
+      "description": "HAACcn Breadcrumb built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/breadcrumb.tsx",
+          "type": "registry:ui",
+          "target": "@ui/breadcrumb.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ]
+    },
+    {
+      "name": "bubble",
+      "type": "registry:ui",
+      "title": "Bubble",
+      "description": "HAACcn Bubble built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/bubble.tsx",
+          "type": "registry:ui",
+          "target": "@ui/bubble.tsx"
+        }
+      ],
+      "categories": [
+        "communication"
+      ]
+    },
+    {
+      "name": "button",
+      "type": "registry:ui",
+      "title": "Button",
+      "description": "HAACcn Button built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/button.tsx",
+          "type": "registry:ui",
+          "target": "@ui/button.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "button-group",
+      "type": "registry:ui",
+      "title": "Button Group",
+      "description": "HAACcn Button Group built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/separator",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/button-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/button-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "calendar",
+      "type": "registry:ui",
+      "title": "Calendar",
+      "description": "HAACcn Calendar built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "lucide-react@^1.31.0",
+        "react-day-picker@^10.0.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/calendar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/calendar.tsx"
+        }
+      ],
+      "categories": [
+        "data display"
+      ]
+    },
+    {
+      "name": "card",
+      "type": "registry:ui",
+      "title": "Card",
+      "description": "HAACcn Card built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/card.tsx",
+          "type": "registry:ui",
+          "target": "@ui/card.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "carousel",
+      "type": "registry:ui",
+      "title": "Carousel",
+      "description": "HAACcn Carousel built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "embla-carousel-react@^8.6.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/carousel.tsx",
+          "type": "registry:ui",
+          "target": "@ui/carousel.tsx"
+        }
+      ],
+      "categories": [
+        "data display"
+      ]
+    },
+    {
+      "name": "chart",
+      "type": "registry:ui",
+      "title": "Chart",
+      "description": "HAACcn Chart built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "recharts@^3.8.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/chart.tsx",
+          "type": "registry:ui",
+          "target": "@ui/chart.tsx"
+        }
+      ],
+      "categories": [
+        "data display"
+      ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:ui",
+      "title": "Checkbox",
+      "description": "HAACcn Checkbox built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/checkbox.tsx",
+          "type": "registry:ui",
+          "target": "@ui/checkbox.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "collapsible",
+      "type": "registry:ui",
+      "title": "Collapsible",
+      "description": "HAACcn Collapsible built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter"
+      ],
+      "files": [
+        {
+          "path": "components/ui/collapsible.tsx",
+          "type": "registry:ui",
+          "target": "@ui/collapsible.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "combobox",
+      "type": "registry:ui",
+      "title": "Combobox",
+      "description": "HAACcn Combobox built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/input-group",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/combobox.tsx",
+          "type": "registry:ui",
+          "target": "@ui/combobox.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "command",
+      "type": "registry:ui",
+      "title": "Command",
+      "description": "HAACcn Command built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "cmdk@^1.1.1",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/dialog",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/input-group",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/command.tsx",
+          "type": "registry:ui",
+          "target": "@ui/command.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "context-menu",
+      "type": "registry:ui",
+      "title": "Context Menu",
+      "description": "HAACcn Context Menu built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/context-menu.tsx",
+          "type": "registry:ui",
+          "target": "@ui/context-menu.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "dialog",
+      "type": "registry:ui",
+      "title": "Dialog",
+      "description": "HAACcn Dialog built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/dialog.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dialog.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "direction",
+      "type": "registry:ui",
+      "title": "Direction",
+      "description": "HAACcn Direction built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter"
+      ],
+      "files": [
+        {
+          "path": "components/ui/direction.tsx",
+          "type": "registry:ui",
+          "target": "@ui/direction.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "drawer",
+      "type": "registry:ui",
+      "title": "Drawer",
+      "description": "HAACcn Drawer built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/drawer.tsx",
+          "type": "registry:ui",
+          "target": "@ui/drawer.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "dropdown-menu",
+      "type": "registry:ui",
+      "title": "Dropdown Menu",
+      "description": "HAACcn Dropdown Menu built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/dropdown-menu.tsx",
+          "type": "registry:ui",
+          "target": "@ui/dropdown-menu.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "empty",
+      "type": "registry:ui",
+      "title": "Empty",
+      "description": "HAACcn Empty built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/empty.tsx",
+          "type": "registry:ui",
+          "target": "@ui/empty.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "field",
+      "type": "registry:ui",
+      "title": "Field",
+      "description": "HAACcn Field built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/label",
+        "MotlaqM/HAACcn/separator",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/field.tsx",
+          "type": "registry:ui",
+          "target": "@ui/field.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "form",
+      "type": "registry:ui",
+      "title": "Form",
+      "description": "Compatibility entry for shadcn's metadata-only form item. Installs HAACcn Field primitives for accessible form composition.",
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/field"
+      ],
+      "docs": "The current official shadcn form entry contains no files. HAACcn preserves that inventory contract and routes consumers to Field instead of recreating the deprecated wrapper API.",
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "hover-card",
+      "type": "registry:ui",
+      "title": "Hover Card",
+      "description": "HAACcn Hover Card built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/hover-card.tsx",
+          "type": "registry:ui",
+          "target": "@ui/hover-card.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "input",
+      "type": "registry:ui",
+      "title": "Input",
+      "description": "HAACcn Input built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input.tsx",
+          "type": "registry:ui",
+          "target": "@ui/input.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "input-group",
+      "type": "registry:ui",
+      "title": "Input Group",
+      "description": "HAACcn Input Group built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/input",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/textarea",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/input-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "input-otp",
+      "type": "registry:ui",
+      "title": "Input Otp",
+      "description": "HAACcn Input Otp built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "input-otp@^1.4.2",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/input-otp.tsx",
+          "type": "registry:ui",
+          "target": "@ui/input-otp.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "item",
+      "type": "registry:ui",
+      "title": "Item",
+      "description": "HAACcn Item built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/separator",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/item.tsx",
+          "type": "registry:ui",
+          "target": "@ui/item.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "kbd",
+      "type": "registry:ui",
+      "title": "Kbd",
+      "description": "HAACcn Kbd built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/kbd.tsx",
+          "type": "registry:ui",
+          "target": "@ui/kbd.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "label",
+      "type": "registry:ui",
+      "title": "Label",
+      "description": "HAACcn Label built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/label.tsx",
+          "type": "registry:ui",
+          "target": "@ui/label.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "marker",
+      "type": "registry:ui",
+      "title": "Marker",
+      "description": "HAACcn Marker built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/marker.tsx",
+          "type": "registry:ui",
+          "target": "@ui/marker.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "menubar",
+      "type": "registry:ui",
+      "title": "Menubar",
+      "description": "HAACcn Menubar built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/dropdown-menu",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/menubar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/menubar.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "message",
+      "type": "registry:ui",
+      "title": "Message",
+      "description": "HAACcn Message built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/message.tsx",
+          "type": "registry:ui",
+          "target": "@ui/message.tsx"
+        }
+      ],
+      "categories": [
+        "communication"
+      ]
+    },
+    {
+      "name": "message-scroller",
+      "type": "registry:ui",
+      "title": "Message Scroller",
+      "description": "HAACcn Message Scroller built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@shadcn/react@^0.3.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/message-scroller.tsx",
+          "type": "registry:ui",
+          "target": "@ui/message-scroller.tsx"
+        }
+      ],
+      "categories": [
+        "communication"
+      ]
+    },
+    {
+      "name": "native-select",
+      "type": "registry:ui",
+      "title": "Native Select",
+      "description": "HAACcn Native Select built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/native-select.tsx",
+          "type": "registry:ui",
+          "target": "@ui/native-select.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "navigation-menu",
+      "type": "registry:ui",
+      "title": "Navigation Menu",
+      "description": "HAACcn Navigation Menu built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/navigation-menu.tsx",
+          "type": "registry:ui",
+          "target": "@ui/navigation-menu.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ]
+    },
+    {
+      "name": "pagination",
+      "type": "registry:ui",
+      "title": "Pagination",
+      "description": "HAACcn Pagination built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/pagination.tsx",
+          "type": "registry:ui",
+          "target": "@ui/pagination.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ]
+    },
+    {
+      "name": "popover",
+      "type": "registry:ui",
+      "title": "Popover",
+      "description": "HAACcn Popover built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/popover.tsx",
+          "type": "registry:ui",
+          "target": "@ui/popover.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "progress",
+      "type": "registry:ui",
+      "title": "Progress",
+      "description": "HAACcn Progress built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/progress.tsx",
+          "type": "registry:ui",
+          "target": "@ui/progress.tsx"
+        }
+      ],
+      "categories": [
+        "data display"
+      ]
+    },
+    {
+      "name": "questionnaire",
+      "type": "registry:ui",
+      "title": "Questionnaire",
+      "description": "HAACcn Questionnaire built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@shadcn/react@^0.3.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/questionnaire.tsx",
+          "type": "registry:ui",
+          "target": "@ui/questionnaire.tsx"
+        }
+      ],
+      "categories": [
+        "communication"
+      ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:ui",
+      "title": "Radio Group",
+      "description": "HAACcn Radio Group built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/radio-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/radio-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "resizable",
+      "type": "registry:ui",
+      "title": "Resizable",
+      "description": "HAACcn Resizable built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "react-resizable-panels@^4.12.2"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/resizable.tsx",
+          "type": "registry:ui",
+          "target": "@ui/resizable.tsx"
+        }
+      ],
+      "categories": [
+        "data display"
+      ]
+    },
+    {
+      "name": "scroll-area",
+      "type": "registry:ui",
+      "title": "Scroll Area",
+      "description": "HAACcn Scroll Area built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/scroll-area.tsx",
+          "type": "registry:ui",
+          "target": "@ui/scroll-area.tsx"
+        }
+      ],
+      "categories": [
+        "data display"
+      ]
+    },
+    {
+      "name": "select",
+      "type": "registry:ui",
+      "title": "Select",
+      "description": "HAACcn Select built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/select.tsx",
+          "type": "registry:ui",
+          "target": "@ui/select.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "separator",
+      "type": "registry:ui",
+      "title": "Separator",
+      "description": "HAACcn Separator built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/separator.tsx",
+          "type": "registry:ui",
+          "target": "@ui/separator.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "sheet",
+      "type": "registry:ui",
+      "title": "Sheet",
+      "description": "HAACcn Sheet built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sheet.tsx",
+          "type": "registry:ui",
+          "target": "@ui/sheet.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "sidebar",
+      "type": "registry:ui",
+      "title": "Sidebar",
+      "description": "HAACcn Sidebar built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/input",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/separator",
+        "MotlaqM/HAACcn/sheet",
+        "MotlaqM/HAACcn/skeleton",
+        "MotlaqM/HAACcn/tooltip",
+        "MotlaqM/HAACcn/use-mobile",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sidebar.tsx",
+          "type": "registry:ui",
+          "target": "@ui/sidebar.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ]
+    },
+    {
+      "name": "skeleton",
+      "type": "registry:ui",
+      "title": "Skeleton",
+      "description": "HAACcn Skeleton built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/skeleton.tsx",
+          "type": "registry:ui",
+          "target": "@ui/skeleton.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "slider",
+      "type": "registry:ui",
+      "title": "Slider",
+      "description": "HAACcn Slider built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/slider.tsx",
+          "type": "registry:ui",
+          "target": "@ui/slider.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "sonner",
+      "type": "registry:ui",
+      "title": "Sonner",
+      "description": "HAACcn Sonner built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "lucide-react@^1.31.0",
+        "next-themes@^0.4.6",
+        "sonner@^2.0.8"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter"
+      ],
+      "files": [
+        {
+          "path": "components/ui/sonner.tsx",
+          "type": "registry:ui",
+          "target": "@ui/sonner.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "spinner",
+      "type": "registry:ui",
+      "title": "Spinner",
+      "description": "HAACcn Spinner built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/spinner.tsx",
+          "type": "registry:ui",
+          "target": "@ui/spinner.tsx"
+        }
+      ],
+      "categories": [
+        "layout and feedback"
+      ]
+    },
+    {
+      "name": "switch",
+      "type": "registry:ui",
+      "title": "Switch",
+      "description": "HAACcn Switch built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/switch.tsx",
+          "type": "registry:ui",
+          "target": "@ui/switch.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "table",
+      "type": "registry:ui",
+      "title": "Table",
+      "description": "HAACcn Table built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/table.tsx",
+          "type": "registry:ui",
+          "target": "@ui/table.tsx"
+        }
+      ],
+      "categories": [
+        "data display"
+      ]
+    },
+    {
+      "name": "tabs",
+      "type": "registry:ui",
+      "title": "Tabs",
+      "description": "HAACcn Tabs built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/tabs.tsx",
+          "type": "registry:ui",
+          "target": "@ui/tabs.tsx"
+        }
+      ],
+      "categories": [
+        "navigation"
+      ]
+    },
+    {
+      "name": "textarea",
+      "type": "registry:ui",
+      "title": "Textarea",
+      "description": "HAACcn Textarea built on Base UI and the design.md semantic system.",
+      "dependencies": [],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/textarea.tsx",
+          "type": "registry:ui",
+          "target": "@ui/textarea.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "toast",
+      "type": "registry:ui",
+      "title": "Toast",
+      "description": "HAACcn Toast built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "lucide-react@^1.31.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/button",
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/toast.tsx",
+          "type": "registry:ui",
+          "target": "@ui/toast.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    },
+    {
+      "name": "toggle",
+      "type": "registry:ui",
+      "title": "Toggle",
+      "description": "HAACcn Toggle built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/toggle.tsx",
+          "type": "registry:ui",
+          "target": "@ui/toggle.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "toggle-group",
+      "type": "registry:ui",
+      "title": "Toggle Group",
+      "description": "HAACcn Toggle Group built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0",
+        "class-variance-authority@^0.7.1"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/toggle",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/toggle-group.tsx",
+          "type": "registry:ui",
+          "target": "@ui/toggle-group.tsx"
+        }
+      ],
+      "categories": [
+        "forms"
+      ]
+    },
+    {
+      "name": "tooltip",
+      "type": "registry:ui",
+      "title": "Tooltip",
+      "description": "HAACcn Tooltip built on Base UI and the design.md semantic system.",
+      "dependencies": [
+        "@base-ui/react@^1.7.0"
+      ],
+      "registryDependencies": [
+        "MotlaqM/HAACcn/haac-theme",
+        "MotlaqM/HAACcn/inter",
+        "MotlaqM/HAACcn/utils"
+      ],
+      "files": [
+        {
+          "path": "components/ui/tooltip.tsx",
+          "type": "registry:ui",
+          "target": "@ui/tooltip.tsx"
+        }
+      ],
+      "categories": [
+        "overlays"
+      ]
+    }
+  ]
+}
