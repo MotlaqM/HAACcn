@@ -97,6 +97,7 @@ async function createConsumer() {
         lib: ["dom", "dom.iterable", "esnext"],
         strict: true,
         noEmit: true,
+        skipLibCheck: true,
         esModuleInterop: true,
         module: "esnext",
         moduleResolution: "bundler",
